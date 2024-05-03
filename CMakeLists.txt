@@ -74,12 +74,11 @@ if(NOT OS_ARCH)
     message(FATAL_ERROR "Could not determine CPU architecture")
 endif()
 
-
 # Add compilation mode on target directory
 if(NOT C_MODE)
-    set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/src/main/resources/de/kherud/llama/${OS_NAME}/${OS_ARCH})
+    set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/target/lib/${OS_NAME}/${OS_ARCH}/lib/native)
 else()
-	set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/src/main/resources/de/kherud/llama/${OS_NAME}/${OS_ARCH}/${C_MODE})
+    set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/target/lib/${OS_NAME}/${OS_ARCH}/${C_MODE}/lib/native)
 endif()
 
 message(STATUS "Installing files to ${JLLAMA_DIR}")
