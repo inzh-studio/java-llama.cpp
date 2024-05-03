@@ -36,16 +36,6 @@ Access this library via Maven:
 
 There are multiple [examples](src/test/java/examples):
 
-### No Setup required
-
-We support CPU inference for the following platforms out of the box:
-
-- Linux x86-64, aarch64
-- MacOS x86-64, aarch64 (M1)
-- Windows x86-64, x64, arm (32 bit)
-
-If any of these match your platform, you can include the Maven dependency and get started.
-
 ### Setup required
 
 If none of the above listed platforms matches yours, currently you have to compile the library yourself (also if you 
