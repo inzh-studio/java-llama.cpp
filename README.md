@@ -1,10 +1,12 @@
-![Java 11+](https://img.shields.io/badge/Java-11%2B-informational)
-![llama.cpp b2702](https://img.shields.io/badge/llama.cpp-%23b2702-informational)
+![Java 17+](https://img.shields.io/badge/Java-17%2B-informational)
+![llama.cpp b2781](https://img.shields.io/badge/llama.cpp-%23b2781-informational)
 
 # Java Bindings for [llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 The main goal of llama.cpp is to run the LLaMA model using 4-bit integer quantization on a MacBook.
 This repository provides Java bindings for the C++ library.
+
+This reporitory is fork from [java-llama.cpp](https://github.com/kherud/java-llama.cpp) for [[InZH] Studio](https://www.inzh.fr/) usage.
 
 **You are welcome to contribute**
 
@@ -28,7 +30,7 @@ Access this library via Maven:
 <dependency>
     <groupId>de.kherud</groupId>
     <artifactId>llama</artifactId>
-    <version>3.0.1</version>
+    <version>3.0.1-inzh</version>
 </dependency>
 ```
 
