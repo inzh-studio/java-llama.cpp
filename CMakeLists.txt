@@ -74,7 +74,14 @@ if(NOT OS_ARCH)
     message(FATAL_ERROR "Could not determine CPU architecture")
 endif()
 
-set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/src/main/resources/de/kherud/llama/${OS_NAME}/${OS_ARCH})
+
+# Add compilation mode on target directory
+if(NOT C_MODE)
+    set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/src/main/resources/de/kherud/llama/${OS_NAME}/${OS_ARCH})
+else()
+	set(JLLAMA_DIR ${CMAKE_SOURCE_DIR}/src/main/resources/de/kherud/llama/${OS_NAME}/${OS_ARCH}/${C_MODE})
+endif()
+
 message(STATUS "Installing files to ${JLLAMA_DIR}")
 
 # include jni.h and jni_md.h
