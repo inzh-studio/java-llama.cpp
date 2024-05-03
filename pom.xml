@@ -4,11 +4,11 @@
 
 	<groupId>de.kherud</groupId>
 	<artifactId>llama</artifactId>
-	<version>3.0.1</version>
+	<version>3.0.1-inzh</version>
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
-	<description>Java Bindings for llama.cpp - A Port of Facebook's LLaMA model in C/C++.</description>
+	<description>Java Bindings for llama.cpp - A Port of Facebook's LLaMA model in C/C++. This version is the fork for [InZH] Studio usage.</description>
 	<url>https://github.com/kherud/java-llama.cpp</url>
 
 	<licenses>
@@ -23,6 +23,15 @@
 			<name>Konstantin Herud</name>
 			<email>konstantin.herud@gmail.com</email>
 			<organizationUrl>https://github.com/kherud</organizationUrl>
+		</developer>
+		<developer>
+			<name>Jean-Raffi Nazareth</name>
+			<email>jr-nazareth@inzh.fr</email>
+			<organization>[InZH] Studio</organization>
+			<organizationUrl>https://www.inzh.fr</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
 		</developer>
 	</developers>
 
