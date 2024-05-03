@@ -10,21 +10,39 @@ option(LLAMA_VERBOSE	"llama: verbose output"		OFF)
 
 #################### json ####################
 
-FetchContent_Declare(
-	json
-	GIT_REPOSITORY https://github.com/nlohmann/json
-	GIT_TAG        v3.11.3
-)
-FetchContent_MakeAvailable(json)
+if(NOT DEFINED DEPS_LOCAL)
+	FetchContent_Declare(
+		json
+		GIT_REPOSITORY https://github.com/nlohmann/json
+		GIT_TAG        v3.11.3
+	)
+	FetchContent_MakeAvailable(json)
+else()
+	FetchContent_Declare(
+		json
+		SOURCE_DIR "${DEPS_LOCAL}/json"
+	)
+	FetchContent_MakeAvailable(json)
+	message(STATUS "Copy json from ${DEPS_LOCAL}")
+endif()
 
 #################### llama.cpp ####################
 
-FetchContent_Declare(
-	llama.cpp
-	GIT_REPOSITORY https://github.com/ggerganov/llama.cpp.git
-	GIT_TAG        b2702
-)
-FetchContent_MakeAvailable(llama.cpp)
+if(NOT DEFINED DEPS_LOCAL)
+	FetchContent_Declare(
+		llama.cpp
+		GIT_REPOSITORY https://github.com/ggerganov/llama.cpp.git
+		GIT_TAG        b2702
+	)
+	FetchContent_MakeAvailable(llama.cpp)
+else()
+	FetchContent_Declare(
+		llama.cpp
+		SOURCE_DIR "${DEPS_LOCAL}/llama.cpp"
+	)
+	FetchContent_MakeAvailable(llama.cpp)
+	message(STATUS "Copy llama.cpp from ${DEPS_LOCAL}")
+endif()
 
 #################### jllama ####################
 
