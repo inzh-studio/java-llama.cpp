@@ -9,7 +9,7 @@
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Java Bindings for llama.cpp - A Port of Facebook's LLaMA model in C/C++. This version is the fork for [InZH] Studio usage.</description>
-	<url>https://github.com/kherud/java-llama.cpp</url>
+	<url>https://github.com/inzh-studio/java-llama.cpp</url>
 
 	<licenses>
 		<license>
@@ -36,9 +36,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/kherud/java-llama.cpp.git</connection>
-		<developerConnection>scm:git:ssh://github.com:kherud/java-llama.cpp.git</developerConnection>
-		<url>https://github.com/kherud/java-llama.cpp/tree/master</url>
+		<connection>scm:git:git://github.com/inzh-studio/java-llama.cpp.git</connection>
+		<developerConnection>scm:git:ssh://github.com:inzh-studio/java-llama.cpp.git</developerConnection>
+		<url>https://github.com/inzh-studio/java-llama.cpp/tree/master</url>
 	</scm>
 
 	<distributionManagement>
