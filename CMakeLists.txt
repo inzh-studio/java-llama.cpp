@@ -32,7 +32,7 @@ if(NOT DEFINED DEPS_LOCAL)
 	FetchContent_Declare(
 		llama.cpp
 		GIT_REPOSITORY https://github.com/ggerganov/llama.cpp.git
-		GIT_TAG        b2702
+		GIT_TAG        b2781
 	)
 	FetchContent_MakeAvailable(llama.cpp)
 else()
