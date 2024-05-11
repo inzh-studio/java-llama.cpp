@@ -12,7 +12,15 @@ abstract class JsonParameters {
 
 	// We save parameters directly as a String map here, to re-use as much as possible of the (json-based) C++ code.
 	// The JNI code for a proper Java-typed data object is comparatively too complex and hard to maintain.
-	final Map<String, String> parameters = new HashMap<>();
+	final Map<String, String> parameters;
+        
+        public JsonParameters(){
+            this.parameters = new HashMap<>();
+        }
+        
+        public JsonParameters(Map<String, String> parameters){
+            this.parameters = parameters;
+        }
 
 	@Override
 	public String toString() {

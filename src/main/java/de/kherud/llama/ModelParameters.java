@@ -69,6 +69,14 @@ public final class ModelParameters extends JsonParameters {
 	private static final String PARAM_SYSTEM_PROMPT = "system_prompt";
 	private static final String PARAM_LOG_FORMAT = "log_format";
 
+        public ModelParameters() {
+            super();
+        }
+
+        public ModelParameters(Map<String, String> parameters) {
+            super(parameters);
+        }
+
 	/**
 	 * Set the RNG seed
 	 */

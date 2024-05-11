@@ -47,9 +47,14 @@ public final class InferenceParameters extends JsonParameters {
 	private static final String PARAM_STREAM = "stream";
 
 	public InferenceParameters(String prompt) {
+                super();
 		// we always need a prompt
 		setPrompt(prompt);
 	}
+
+        public InferenceParameters(Map<String, String> parameters) {
+            super(parameters);
+        }
 
 	/**
 	 * Set the prompt to start generation with (default: empty)
