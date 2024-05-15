@@ -18,10 +18,6 @@ abstract class JsonParameters {
             this.parameters = new HashMap<>();
         }
         
-        public JsonParameters(Map<String, String> parameters){
-            this.parameters = parameters;
-        }
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

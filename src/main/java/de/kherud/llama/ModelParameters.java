@@ -72,11 +72,7 @@ public final class ModelParameters extends JsonParameters {
         public ModelParameters() {
             super();
         }
-
-        public ModelParameters(Map<String, String> parameters) {
-            super(parameters);
-        }
-
+        
 	/**
 	 * Set the RNG seed
 	 */
