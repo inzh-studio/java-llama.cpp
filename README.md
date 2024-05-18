@@ -24,7 +24,7 @@ This repository is fork from [java-llama.cpp](https://github.com/kherud/java-lla
 
 ## Quick Start
 
-Access this library via Maven:
+Access this library via Maven (build local only):
 
 ```xml
 <dependency>
